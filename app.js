@@ -36,6 +36,10 @@ console.log('Something went wrong when retrieving an access token', error);
 
 // the routes go here:
 
+app.get('/', (request, response) => {
+    response.render('index');
+});
+
 
 
 app.listen(3000, () => console.log("My Spotify project running on port 3000 🎧 🥁 🎸 🔊"));
